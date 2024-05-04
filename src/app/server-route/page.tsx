@@ -1,8 +1,11 @@
 import ImageSlider from '@/components/ImageSlider';
+// import { clientSideFunction } from '@/utils/client-utils';
 import { serverSideFunction } from '@/utils/server-utils';
 
 const ServerRoute = () => {
   const result = serverSideFunction();
+  // const clientResult = clientSideFunction();
+  // console.log(clientResult);
   console.log('Server Route rendered');
   return (
     <div>
